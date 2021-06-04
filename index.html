@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="js/index.js" defer></script>
+  </head>
+  <body>
+    <form autocomplete="off" novalidate>
+      <div class="grupo">
+        <label for="nombre">Nombre: </label
+        ><input
+          id="nombre"
+          type="text"
+          placeholder="Escribe tu nombre"
+          required
+        />
+      </div>
+      <div class="grupo">
+        <label for="login">Nombre de usuario: </label
+        ><input id="login" type="text" required />
+      </div>
+      <div class="grupo">
+        <label for="contrasenya">Contraseña: </label
+        ><input id="contrasenya" type="password" required minlength="6" />
+      </div>
+      <div class="grupo">
+        <label for="email">Email: </label>
+        <input type="email" id="email" />
+      </div>
+      <div class="grupo">
+        <label for="tipo-programador">Tipo de programador: </label>
+        <select id="tipo-programador">
+          <option value="front">Frontend</option>
+          <option value="back">Backend</option>
+          <option value="full" selected>Full Stack</option>
+        </select>
+      </div>
+      <div class="grupo confirmacion-tipo-programador">
+        <label for="seguro">¿Estás seguro?</label>
+        <input type="checkbox" id="seguro" />
+      </div>
+      <div class="grupo">
+        <p>¿Eres de perretes o de gatetes?</p>
+        <input type="radio" id="perretes" name="bichos" />
+        <label for="perretes">perretes</label>
+        <input type="radio" id="gatetes" name="bichos" />
+        <label for="gatetes">gatetes</label>
+        <label for="recordar">¿Quieres recordar la contraseña?</label>
+        <input type="checkbox" id="recordar" />
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>

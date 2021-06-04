@@ -1,0 +1,6 @@
+.confirmacion-tipo-programador {
+  display: none;
+}
+.confirmacion-tipo-programador.on {
+  display: block;
+}
